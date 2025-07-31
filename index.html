@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apology for Cecilia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      margin: 0;
+      padding: 50px;
+      animation: pageFade 1s ease forwards;
+      opacity: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff69b4;
+      margin-bottom: 30px;
+    }
+
+    .hearts {
+      font-size: 30px;
+      animation: floatHearts 3s infinite ease-in-out;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 22px;
+      padding: 12px 24px;
+      background-color: #ffb6c1;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #popup {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease forwards;
+      display: none;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes floatHearts {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-20px); opacity: 0.5; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pageFade {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🐱 Are you Cecilia? Click to reveal a secret...</h1>
+  <div class="hearts">💕 💖 💞 💘</div>
+  <button onclick="showApology()">Click Me</button>
+
+  <div id="popup">
+    <img src="https://i.pinimg.com/originals/57/ed/ed/57eded742a6a245a7a5b23e1711b0fcf.gif" alt="Apology Cat GIF" />
+    <p>i know i am not a good bf, always make u mad🥺</p>
+    <p>but...</p>
+    <p>i rlly rlly like u and luv u so much💖</p>
+    <p><strong>My cute cute bb zu, Can u forgive your bad bad bf ma🥺</strong></p>
+  </div>
+
+  <script>
+    function showApology() {
+      document.getElementById("popup").style.display = "block";
+    }
+  </script>
+</body>
+</html>
